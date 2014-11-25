@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UIPageViewControllerDataSource>
 
+@property (strong, nonatomic) UIPageViewController *pageViewController;
+@property (nonatomic, assign) NSUInteger realIndex;
 
 @end
 
