@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "DashBaseViewController.h"
 
-@interface TableViewController : DashBaseViewController
+@interface AnotherViewController : DashBaseViewController
 
 @end

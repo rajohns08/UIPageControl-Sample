@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "RegularViewController.h"
-#import "TableViewController.h"
+#import "AnotherViewController.h"
 #import "DashBaseViewController.h"
 
 @interface ViewController ()
@@ -45,15 +45,10 @@
        transitionCompleted:(BOOL)completed {
     
     if (completed) {
-        switch (_outletPageControl.currentPage) {
-            case 0:
-                _outletPageControl.currentPage = 1;
-                break;
-            default:
-                _outletPageControl.currentPage = 0;
-                break;
-        }
+        NSUInteger currentIndex = [[_pageViewController.viewControllers lastObject] index];
+        _outletPageControl.currentPage = currentIndex;
     }
+    
     
 }
 
@@ -88,7 +83,7 @@
 - (UIViewController *)viewControllerAtIndex:(NSUInteger)index {
     switch (index) {
         case 1: {
-            TableViewController *tableView = [self.storyboard instantiateViewControllerWithIdentifier:@"MyTable"];
+            AnotherViewController *tableView = [self.storyboard instantiateViewControllerWithIdentifier:@"AnotherView"];
             tableView.index = 1;
             return tableView;
         } break;

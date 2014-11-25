@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="1997" y="1013"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Another View Controller-->
         <scene sceneID="l8W-zN-yQW">
             <objects>
-                <viewController storyboardIdentifier="MyTable" id="HsB-q8-81U" customClass="TableViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnotherView" id="HsB-q8-81U" customClass="AnotherViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L64-W2-FlX"/>
                         <viewControllerLayoutGuide type="bottom" id="W4w-yX-uNa"/>

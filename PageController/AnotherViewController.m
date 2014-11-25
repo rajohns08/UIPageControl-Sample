@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Adam Johns. All rights reserved.
 //
 
-#import "TableViewController.h"
+#import "AnotherViewController.h"
 
-@interface TableViewController ()
+@interface AnotherViewController ()
 
 @end
 
-@implementation TableViewController
+@implementation AnotherViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
