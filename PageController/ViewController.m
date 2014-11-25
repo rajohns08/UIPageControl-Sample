@@ -23,6 +23,7 @@
     // Create page view controller
     _pageViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
     _pageViewController.dataSource = self;
+    _pageViewController.delegate = self;
     
     NSArray *viewControllers = @[[self viewControllerAtIndex:0]];
     [_pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
@@ -33,6 +34,30 @@
     [self addChildViewController:_pageViewController];
     [self.view addSubview:_pageViewController.view];
     [_pageViewController didMoveToParentViewController:self];
+    
+    _currentPage = 0;
+    _outletPageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+    _outletPageControl.currentPageIndicatorTintColor = [UIColor blackColor];
+}
+
+- (void)pageViewController:(UIPageViewController *)pageViewController
+        didFinishAnimating:(BOOL)finished
+   previousViewControllers:(NSArray *)previousViewControllers
+       transitionCompleted:(BOOL)completed {
+    
+    if (completed) {
+        switch (_currentPage) {
+            case 0:
+                _currentPage = 1;
+                break;
+            default:
+                _currentPage = 0;
+                break;
+        }
+        
+        _outletPageControl.currentPage = _currentPage;
+    }
+    
 }
 
 #pragma mark - Page View Controller Data Source
@@ -76,14 +101,6 @@
             return regularView;
         } break;
     }
-}
-
-- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
-    return 2;
-}
-
-- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
-    return 0;
 }
 
 @end

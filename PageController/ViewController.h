@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UIPageViewControllerDataSource>
+@interface ViewController : UIViewController <UIPageViewControllerDataSource, UINavigationControllerDelegate, UIPageViewControllerDelegate>
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
-@property (nonatomic, assign) NSUInteger realIndex;
+@property (weak, nonatomic) IBOutlet UIPageControl *outletPageControl;
+@property (nonatomic, assign) NSUInteger currentPage;
 
 @end
 
