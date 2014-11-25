@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Adam Johns. All rights reserved.
 //
 
-#import "RegularViewController.h"
+#import "OriginalViewController.h"
 
-@interface RegularViewController ()
+@interface OriginalViewController ()
 
 @end
 
-@implementation RegularViewController
+@implementation OriginalViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

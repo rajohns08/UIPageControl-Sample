@@ -14,7 +14,7 @@
 		DCAD19541A24C92D00B6BCA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAD19531A24C92D00B6BCA9 /* Images.xcassets */; };
 		DCAD19571A24C92D00B6BCA9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCAD19551A24C92D00B6BCA9 /* LaunchScreen.xib */; };
 		DCAD19631A24C92D00B6BCA9 /* PageControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAD19621A24C92D00B6BCA9 /* PageControllerTests.m */; };
-		DCAD196E1A24CA4E00B6BCA9 /* RegularViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAD196D1A24CA4E00B6BCA9 /* RegularViewController.m */; };
+		DCAD196E1A24CA4E00B6BCA9 /* OriginalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAD196D1A24CA4E00B6BCA9 /* OriginalViewController.m */; };
 		DCAD19791A24E0D900B6BCA9 /* AnotherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAD19781A24E0D900B6BCA9 /* AnotherViewController.m */; };
 		DCAD197C1A24E52000B6BCA9 /* DashBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAD197B1A24E52000B6BCA9 /* DashBaseViewController.m */; };
 /* End PBXBuildFile section */
@@ -43,8 +43,8 @@
 		DCAD195C1A24C92D00B6BCA9 /* PageControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PageControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAD19611A24C92D00B6BCA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCAD19621A24C92D00B6BCA9 /* PageControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageControllerTests.m; sourceTree = "<group>"; };
-		DCAD196C1A24CA4E00B6BCA9 /* RegularViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularViewController.h; sourceTree = "<group>"; };
-		DCAD196D1A24CA4E00B6BCA9 /* RegularViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularViewController.m; sourceTree = "<group>"; };
+		DCAD196C1A24CA4E00B6BCA9 /* OriginalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OriginalViewController.h; sourceTree = "<group>"; };
+		DCAD196D1A24CA4E00B6BCA9 /* OriginalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OriginalViewController.m; sourceTree = "<group>"; };
 		DCAD19771A24E0D900B6BCA9 /* AnotherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnotherViewController.h; sourceTree = "<group>"; };
 		DCAD19781A24E0D900B6BCA9 /* AnotherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnotherViewController.m; sourceTree = "<group>"; };
 		DCAD197A1A24E52000B6BCA9 /* DashBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashBaseViewController.h; sourceTree = "<group>"; };
@@ -98,8 +98,8 @@
 				DCAD19531A24C92D00B6BCA9 /* Images.xcassets */,
 				DCAD19551A24C92D00B6BCA9 /* LaunchScreen.xib */,
 				DCAD19461A24C92D00B6BCA9 /* Supporting Files */,
-				DCAD196C1A24CA4E00B6BCA9 /* RegularViewController.h */,
-				DCAD196D1A24CA4E00B6BCA9 /* RegularViewController.m */,
+				DCAD196C1A24CA4E00B6BCA9 /* OriginalViewController.h */,
+				DCAD196D1A24CA4E00B6BCA9 /* OriginalViewController.m */,
 				DCAD19771A24E0D900B6BCA9 /* AnotherViewController.h */,
 				DCAD19781A24E0D900B6BCA9 /* AnotherViewController.m */,
 				DCAD197A1A24E52000B6BCA9 /* DashBaseViewController.h */,
@@ -236,7 +236,7 @@
 			files = (
 				DCAD194F1A24C92D00B6BCA9 /* ViewController.m in Sources */,
 				DCAD197C1A24E52000B6BCA9 /* DashBaseViewController.m in Sources */,
-				DCAD196E1A24CA4E00B6BCA9 /* RegularViewController.m in Sources */,
+				DCAD196E1A24CA4E00B6BCA9 /* OriginalViewController.m in Sources */,
 				DCAD194C1A24C92D00B6BCA9 /* AppDelegate.m in Sources */,
 				DCAD19791A24E0D900B6BCA9 /* AnotherViewController.m in Sources */,
 				DCAD19491A24C92D00B6BCA9 /* main.m in Sources */,

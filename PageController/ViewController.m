@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "RegularViewController.h"
+#import "OriginalViewController.h"
 #import "AnotherViewController.h"
 #import "DashBaseViewController.h"
 
@@ -48,8 +48,6 @@
         NSUInteger currentIndex = [[_pageViewController.viewControllers lastObject] index];
         _outletPageControl.currentPage = currentIndex;
     }
-    
-    
 }
 
 #pragma mark - Page View Controller Data Source
@@ -88,7 +86,7 @@
             return tableView;
         } break;
         default: {
-            RegularViewController *regularView = [self.storyboard instantiateViewControllerWithIdentifier:@"RegularView"];
+            OriginalViewController *regularView = [self.storyboard instantiateViewControllerWithIdentifier:@"OriginalView"];
             regularView.index = 0;
             return regularView;
         } break;
