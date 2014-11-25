@@ -12,7 +12,6 @@
 
 @property (strong, nonatomic) UIPageViewController *pageViewController;
 @property (weak, nonatomic) IBOutlet UIPageControl *outletPageControl;
-@property (nonatomic, assign) NSUInteger currentPage;
 
 @end
 

@@ -35,7 +35,6 @@
     [self.view addSubview:_pageViewController.view];
     [_pageViewController didMoveToParentViewController:self];
     
-    _currentPage = 0;
     _outletPageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
     _outletPageControl.currentPageIndicatorTintColor = [UIColor blackColor];
 }
@@ -46,16 +45,14 @@
        transitionCompleted:(BOOL)completed {
     
     if (completed) {
-        switch (_currentPage) {
+        switch (_outletPageControl.currentPage) {
             case 0:
-                _currentPage = 1;
+                _outletPageControl.currentPage = 1;
                 break;
             default:
-                _currentPage = 0;
+                _outletPageControl.currentPage = 0;
                 break;
         }
-        
-        _outletPageControl.currentPage = _currentPage;
     }
     
 }
