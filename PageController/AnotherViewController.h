@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DashBaseViewController.h"
+#import "PageBaseViewController.h"
 
-@interface AnotherViewController : DashBaseViewController
+@interface AnotherViewController : PageBaseViewController
 
 @end

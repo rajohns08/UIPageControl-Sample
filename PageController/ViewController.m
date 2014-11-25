@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "OriginalViewController.h"
 #import "AnotherViewController.h"
-#import "DashBaseViewController.h"
+#import "PageBaseViewController.h"
 
 @interface ViewController ()
 
@@ -55,7 +55,7 @@
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController
       viewControllerBeforeViewController:(UIViewController *)viewController {
     
-    NSUInteger index = ((DashBaseViewController *) viewController).index;
+    NSUInteger index = ((PageBaseViewController *) viewController).index;
     
     if (index == 0) {
         return nil;
@@ -68,7 +68,7 @@
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController
        viewControllerAfterViewController:(UIViewController *)viewController {
     
-    NSUInteger index = ((DashBaseViewController *) viewController).index;
+    NSUInteger index = ((PageBaseViewController *) viewController).index;
     
     if (index == 0) {
         return [self viewControllerAtIndex:1];

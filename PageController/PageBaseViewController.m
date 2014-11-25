@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 Adam Johns. All rights reserved.
 //
 
-#import "DashBaseViewController.h"
+#import "PageBaseViewController.h"
 
-@interface DashBaseViewController ()
+@interface PageBaseViewController ()
 
 @end
 
-@implementation DashBaseViewController
+@implementation PageBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

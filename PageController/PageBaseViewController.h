@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DashBaseViewController : UIViewController
+@interface PageBaseViewController : UIViewController
 
 @property (nonatomic,assign) NSUInteger index;
 
