@@ -39,6 +39,8 @@
     _outletPageControl.currentPageIndicatorTintColor = [UIColor blackColor];
 }
 
+#pragma mark = UIPageViewControllerDelegate
+
 - (void)pageViewController:(UIPageViewController *)pageViewController
         didFinishAnimating:(BOOL)finished
    previousViewControllers:(NSArray *)previousViewControllers
@@ -50,7 +52,7 @@
     }
 }
 
-#pragma mark - Page View Controller Data Source
+#pragma mark - UIPageViewControllerDataSource
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController
       viewControllerBeforeViewController:(UIViewController *)viewController {
